@@ -1,0 +1,581 @@
+/*for mobile devices */
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;   
+}
+body{
+    margin: 0;
+ }
+
+h1{  
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{    
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+ a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none; 
+ }
+
+p{
+    font-size: 1.2rem;    
+    text-align: justify;          
+}
+
+.dotted-hr {
+	border: dotted 6px white;
+	border-bottom: none;
+	margin: 0px auto;
+	width: 70px;
+}
+
+
+/* column design for mobile phones starts here */
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* column design for mobile phones ends here */
+
+
+/* navbar design starts here  */
+.navbar {
+	background-color: #40868b;
+	padding: 0 7%;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #830659;
+	z-index: 9999;
+	margin: -5px;
+}
+.nav-logo {
+    padding: 0 10px;
+}
+.nav-heading {
+    padding: 0 10px;
+}
+ .nav-heading h1{
+    color: white; 
+    margin: 0;    
+    padding-top: 10px;   
+ }
+
+ .navbar-menu{
+     display: flex;
+     flex-direction: column;  
+     padding: 0 10px;
+ }
+.navbar-menu a{      
+     margin: 7px 0px;  
+     padding: 10px;      
+ }
+ .navbar-menu a:hover{
+	border-bottom: 5px solid#000;
+    color: #000;
+    border-radius: 0;
+    background: #fff;
+    /* text-decoration: underline; */
+ }
+ .navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* navbar designing starts here */
+.nav-logo{
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;    
+}
+.navbar-menu{            
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-menu a {
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 10px;
+	margin: 16px 3px 9px 7px;
+	font-size: 1.2rem;
+}
+/* navbar design ends here  */
+
+
+/* profile design starts here  */
+.profile {
+	position: relative;
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+.profile-desc h1 {
+	font-size: 4rem;
+	margin: 0;
+	color: #fff;
+	font-style: italic;
+	padding-top: 12px;
+}
+.welcome {
+	background: #76B8F7;
+	padding: 15px 0 0 0;
+}
+.welcome h1 {
+    font-style: italic;
+    color: #F0F0F0;
+    font-size: 75px;
+}   
+.profile::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* profile design ends here  */
+/* certificate div design starts here  */
+
+.certificate {
+	background-color: #2b6f91;
+	padding: 1% 7%;
+	padding-bottom: 50px;
+	margin: 53px 0 0px 0;
+}
+.subject-card.col-3.col-s-6 {
+	background: #6f6b3c;
+}
+.certificate-heading {
+     background-color: white; 
+     padding: 1px 0;
+     margin-top: 20px;
+}
+.certificate-heading a h2{
+    width: 100%;
+    color: black; 
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+.certificate-heading .dotted-hr{
+    border:solid 3px black;
+    border-bottom: none;
+    margin:  0 auto 15px auto;
+    width: 250px;
+}
+.certificate-heading p {
+    width: 96%;
+    margin: 0 2% 10px 2%;
+    color: #000;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.subject-card img {
+	width: 100%;
+	height: 246px;
+}
+.subject-card h5 {
+    width: 100%;
+    background-color: #F0F0F0;
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px 0;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.about-me {
+	background-color: #648e86;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	text-align: center;
+	margin-top: 52px;
+}
+.about-div {
+    background-color: #648e86;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1% 7%;
+    text-align: center;
+    margin-top: 0;
+}
+.about-me p{  
+    /* font-size: 1rem;  */
+    text-align: center;   
+}
+.aboutme-image img {
+	height: 492px;
+	width: 380px;
+    border: 5px solid white;
+}
+.aboutme-desc a{
+    font-size: 1.2rem;
+}
+.aboutme-image {
+	margin-top: 22px;
+}
+.aboutme-desc h2 {
+   text-align: left;
+}
+.aboutme-desc p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+.aboutme-desc p a {
+    color: blue;
+}
+/* about-me designing ends here  */
+
+.about-me::after{
+    clear: both;
+    content: '';   
+    display: table;
+}
+/* about me ends here  */
+.info-div {
+	width: 100%;
+	height: 455px;
+	background-color: #738067;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	margin: 53px 0 0 0;
+}
+.info h3 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+/* favorite-info div starts here  */
+.movies ol li {
+	line-height: 40px;
+	font-size: bold;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 43px;
+	color: #fff;
+	font-size: 20px;
+}
+.movies h2 {
+	background: #fff;
+	color: #000;
+	line-height: 40px;
+}
+.movies ol {
+	text-align: center;
+}
+.mcover-table h2 {
+    background: #fff;
+	color: #000;
+	line-height: 40px;
+	width: 108%;
+}
+.favorite-info {
+	width: 100%;
+	height: 606px;
+	background-color: #d2c4a1;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	margin: 5px 0;
+}
+
+.favorite-quote {
+	background-color: #738067;
+	height: 445px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	text-align: center;
+}
+.favorite-quote-row ol li {
+	text-align: center;
+	line-height: 33px;
+
+}
+.favorite-poem h3 {
+    color:#fff;
+}
+.favorite-poem pre {
+	color: #fff;
+	margin: 0 0 0 129px;
+}
+
+.favorite-pomes-div {
+	background-color: #04184d;
+	height: 450px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	text-align: center;
+}
+.favorite-poem pre {
+	text-align: left;
+	line-height: 27px;
+}
+.favorite-poem h3 {
+	color: #e7f2eb;
+	font-size: 26px;
+}
+.education-table {
+	background-color: #04184d;
+	height: 299px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 7%;
+	text-align: center;
+}
+.education-class table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin:0 20px 5px 100px;
+
+  }
+table,td, th {
+    border: 1px solid #c2aeae;
+    text-align: left;
+    padding: 8px;
+    color: #000;
+  }
+tr:nth-child(2n+1) {
+	background-color: #e85f5f;
+}
+  tr:nth-child(even) {
+    background-color: #4a9780;
+}
+  
+/* hobbies-div starts here  */
+.hobbies-div {
+	background-color: #738067;
+	height: 435px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1% 8%;
+}
+.hobbies img {
+	width: 257px;
+	height: 272px;
+	margin: 4px 7px;
+}
+.hobbies h3 {
+	background-color: #fff;
+	color: #000;
+	line-height: 32px;
+	text-align: center;
+	margin: 8px 7px 11px 7px;
+}
+/* hobbies-div ends here  */
+/* professional experience div starts here  */
+.professional-experience{
+    padding: 1% 0%;      
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    height: 890px;    
+}
+.card:hover {   
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;   
+    padding: 15px;   
+}
+
+.card-title h2{
+    background-color: #616161 ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+
+/* progress bar for skill div starts here  */
+.skills-container li{
+    font-weight: bolder;
+    list-style: none;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;  
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153, .5);
+    border-radius: 1000px;
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: rgb(86, 86, 153, 1);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+    animation-iteration-count: 3;
+}
+
+
+.skills-container li.html::after{
+   animation-name: html;
+}
+
+.skills-container li.css::after{
+   animation-name: css;
+}
+/* progress bar for skill div starts here  */
+.professional-experience::after{
+    clear: both;
+    content: '';   
+    display: table;
+}
+/* professional-experience div ends here  */
+/* achievement-contact div starts here  */
+.achievement-contact {
+	padding: 1% 7%;
+	background-color: #648E86;
+	color: white;
+	margin: 53px 0 0 0;
+}
+.contact{
+    text-align: center;
+    margin: 0 300px;
+}
+.contact input, textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	border-radius: 23px;
+	resize: none;
+}
+.contact button{           
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f; 
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px; 
+    padding: 15px;
+    width: 100px;   
+}
+.achievement-contact::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* achievement-contact div ends here  */
+/* footer div starts here  */
+.footer {
+	background-color: #830659;
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+.footer span a {
+    font-size: 14px;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* professional-experience designing starts here  */
+.professional-experience{
+    padding: 1% 5%;      
+}
+
+/* .professional-experience .card{
+   height: 100vh;    
+} */
+/* professional-experience designing ends here  */
+
+/* achievement-contact div designing starts here  */
+.contact button{           
+    width: 150px;   
+}
+.contact-links{
+    text-align: center; 
+    position: relative;     
+} 
+.btn{
+    margin: 5px;
+    width: 80px;
+}
+.achievement{
+    padding-right: 50px;
+}
+/* achievement-contact div designing ends here  */
+
+/* footer designing starts here */
+.footer-menu{
+    margin-top: 12px;
+}
+
+.footer-menu a{
+    display: inline;
+    font-size: 1rem;
+    margin: 10px;
+}
+/* footer designing ends here */
